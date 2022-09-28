@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <img style="width:100%;" src="{% static 'faper/img/faper.png' %}" alt="">
+
+    <center>
+        <h1>Fakultas Pertanian</h1>
+    </center>
+    <h2>Terdiri dari prodi-prodi</h2>
+
+    {% for faper in faper %}
+    <li>{{ faper }}</li>
+    {% endfor %}
+
+{% endblock %}

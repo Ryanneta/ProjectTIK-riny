@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+<img style="width:100%;" src="{% static 'img/banner_about.png' %}" alt="">
+
+
+<center>
+    <h2>Biodata Diri</h2>
+</center>
+
+<center>   
+<img style="width:25%;" src="{% static 'riny/img/riny.jpg' %}" alt="">
+</center>
+
+<center>
+    <p></p>
+<p style="font-family: 'times new roman'">Nama : Riny Anggraeni</p>
+<p style="font-family: 'times new roman'">NIM : 2225210007</p>
+<p style="font-family: 'times new roman'">Semester/Kelas : 3/A</p>
+<p style="font-family: 'times new roman'">Dosen Pengampu : Aan Hendrayana</p>
+</center>
+
+<hr />
+
+<footer>
+    <div class="font-small">&copy; Teknologi Informasi dan Komunikasi Untuk Pembelajaran</div> 
+    <div class="font-small">@ryanneta</div>
+</footer>
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<img style="width:100%;" src="{% static 'fh/img/fh.jpg' %}" alt="">
+
+<body>
+    <center>
+        <h1>Fakultas Hukum</h1>
+    </center>
+    <h2>Terdiri dari prodi-prodi</h2>
+
+    {{ fh }}
+
+{% endblock %}

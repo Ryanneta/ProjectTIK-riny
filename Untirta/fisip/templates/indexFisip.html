@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<img style="width:100%;" src="{% static 'fisip/img/fisip.png' %}" alt="">
+
+    <center>
+        <h1>Fakultas Ilmu Sosial dan Ilmu Politik</h1>
+    </center>
+    <h2>Terdiri dari prodi-prodi</h2>
+
+    {% for fisip in fisip %}
+    <li>{{ fisip }}</li>
+    {% endfor %}
+
+    {% endblock %}

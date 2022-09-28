@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<img style="width:100%;" src="{% static 'ft/img/ft.png' %}" alt="">
+
+    <center>
+        <h1>Fakultas Teknik</h1>
+    </center>
+    <h2>Terdiri dari prodi-prodi</h2>\
+
+    {% for ft in ft %}
+    <li>{{ ft }}</li>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<img style="width:100%;" src="{% static 'feb/img/feb.jpg' %}" alt="">
+
+<body>
+    <center>
+        <h1>Fakultas Ekonomi dan Bisnis</h1>
+    </center>
+    <h2>Terdiri dari prodi-prodi : </h2>
+
+    {% for feb in feb %}
+    <li>{{ feb }}</li>
+    {% endfor %}
+
+{% endblock %}

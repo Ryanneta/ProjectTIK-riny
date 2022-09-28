@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<img style="width:100%;" src="{% static 'fkip/img/fkip.jpg' %}" alt="">
+
+    <center>
+        <h1>Fakultas Keguruan dan Ilmu Pendidikan</h1>
+    </center>
+    
+    <h2>Terdiri dari prodi-prodi</h2>
+
+    {% for fkip in fkip %}
+    <li>{{ fkip }}</li>
+    {% endfor %}
+
+{% endblock %}

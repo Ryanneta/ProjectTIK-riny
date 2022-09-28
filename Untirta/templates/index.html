@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <img style="width:100%;" src="{% static banner %}" alt="">
+    {% include 'navbar.html' %}
+
+<div class="container">
+
+    <center>
+        <h1>{{ judul }}</h1>
+    </center>
+
+    <center>   
+        <img style="width:25%;" src="{% static me %}" alt="">
+    </center>
+
+        <p>{{ nama }}</p>
+        <p> {{ kelas }} </p>
+        <p> {{ nim }} </p>
+        <p> {{ jurusan }} </p>
+        <p> {{ dosen }} </p>
+        <p> {{ mk }} </p>
+
+    <h2>{{ terdiri }}</h2>
+
+    <p>
+        {{ p1 }}
+    </p>
+    <p>
+        {{ p2 }}
+    </p>
+    <p>
+        {{ p3 }}
+    </p>
+
+    {% for fakultas in fakultas %}
+    <li>{{ fakultas }}</li>
+    {% endfor %}
+
+    <footer>
+        <div class="font-small">{{ footer }}</div> 
+    </footer>
+
+</div>
+{% endblock %}

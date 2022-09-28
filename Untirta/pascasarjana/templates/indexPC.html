@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<img style="width:100%;" src="{% static 'ps/img/ps.jpg' %}" alt="">
+
+    <center>
+        <h1>Pascasarjana</h1>
+    </center>
+    <h2>Terdiri dari prodi-prodi</h2>
+
+    {% for pc in pc %}
+    <li>{{ pc }}</li>
+    {% endfor %}
+
+{% endblock %}

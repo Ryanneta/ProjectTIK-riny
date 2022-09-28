@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<img style="width:100%;" src="{% static 'fk/img/fk.jpg' %}" alt="">
+
+    <center>
+        <h1>Fakultas Kedokteran</h1>
+    </center>
+    <h2>Terdiri dari prodi-prodi</h2>
+
+    {% for fk in fk %}
+    <li>{{ fk }}</li>
+    {% endfor %}
+    
+{% endblock %}
